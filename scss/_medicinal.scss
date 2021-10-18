@@ -1,0 +1,225 @@
+.primerseccion {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.8rem;
+  grid-template-areas: "cbd noticias recetas";
+  background-color: rgba(123, 209, 66, 0.336);
+  img {
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+    border-radius: 15%;
+  }
+  p {
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(92, 133, 92);
+  }
+  .primerseccion__cbd {
+    width: 100%;
+    height: 100%;
+    grid-area: cbd;
+    border: 0.3rem solid rgb(92, 133, 92);
+    border-radius: 10%;
+    background-color: rgb(221, 255, 221);
+  }
+  .primerseccion__noticias {
+    width: 100%;
+    height: 100%;
+    grid-area: noticias;
+    border: 0.3rem solid rgb(92, 133, 92);
+    border-radius: 10%;
+    background-color: rgb(221, 255, 221);
+  }
+  .primerseccion__recetas {
+    width: 100%;
+    height: 100%;
+    grid-area: recetas;
+    border: 0.3rem solid rgb(92, 133, 92);
+    border-radius: 10%;
+    background-color: rgb(221, 255, 221);
+  }
+}
+
+.segundaseccion {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 0.3rem solid #5c855c;
+  .segundaseccion__articulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .segundaseccion__documental {
+    background-color: rgba(123, 209, 66, 0.336);
+    text-align: center;
+    h2 {
+      text-decoration: underline;
+      font-family: "Shadows Into Light", cursive;
+      color: white;
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.imagenesRecetas {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 20rem auto auto 20rem;
+  grid-template-rows: 15rem auto 15rem;
+  gap: 1.8rem;
+  grid-template-areas:
+    "aceite crema  crema infusiones"
+    "aceite formas formas infusiones"
+    "aceite comida comida infusiones";
+  align-items: center;
+  background-color: rgba(123, 209, 66, 0.336);
+  .aceiteMed {
+    grid-area: aceite;
+    width: 100%;
+    height: 100%;
+  }
+  .cremaMed {
+    grid-area: crema;
+    width: 100%;
+    height: 100%;
+  }
+  .formas {
+    font-size: 3rem;
+    grid-area: formas;
+    text-align: center;
+    font-style: italic;
+    color: rgb(92, 133, 92);
+    font-family: "Rampart One", cursive;
+  }
+  .infusionesMed {
+    grid-area: infusiones;
+    width: 100%;
+    height: 100%;
+  }
+
+  .comidaMed {
+    grid-area: comida;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .primerseccion {
+    border: solid red;
+
+    img {
+      width: 100%;
+      height: 60%;
+      padding: 0.5rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+  .segundaseccion {
+    border: solid blue;
+    h1 {
+      font-size: 2.3rem;
+    }
+    .segundaseccion__articulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-style: italic;
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+  .segundaseccion__documental {
+    iframe {
+      width: 40rem;
+      height: 30rem;
+    }
+  }
+  .imagenesRecetas {
+    border: solid red;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 12rem auto 12rem;
+    grid-template-rows: 10rem auto 10rem;
+    gap: 1rem;
+    grid-template-areas:
+      "aceite crema infusiones"
+      "aceite formas infusiones"
+      "aceite comida infusiones";
+    align-items: center;
+    background-color: rgba(123, 209, 66, 0.336);
+    .aceiteMed {
+      grid-area: aceite;
+      width: 100%;
+      height: 80%;
+    }
+    .cremaMed {
+      grid-area: crema;
+      width: 100%;
+      height: 100%;
+    }
+    .formas {
+      font-size: 2rem;
+      grid-area: formas;
+    }
+    .infusionesMed {
+      grid-area: infusiones;
+      width: 100%;
+      height: 80%;
+    }
+
+    .comidaMed {
+      grid-area: comida;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .primerseccion {
+    display: flex;
+    flex-direction: column;
+  }
+  .segundaseccion {
+    .segundaseccion__articulo{
+      p{
+        font-size: 1rem;
+      }
+    }
+    .segundaseccion__documental {
+      h2 {
+        font-size: 2.5rem;
+      }
+      iframe {
+        width: 18rem;
+        height: 15rem;
+      }
+    }
+  }
+  .imagenesRecetas {
+    border: solid red;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,1133 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Rampart+One&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Yanone+Kaffeesatz:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Klee One", cursive;
+}
+
+.carrousel {
+  background-color: rgba(161, 224, 161, 0.705);
+}
+
+h1 {
+  text-align: center;
+  color: #5c855c;
+  font-size: 2.8rem;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.menu {
+  height: 100%;
+  width: 100%;
+  background-color: #4f991e;
+  padding: 20px 0;
+  border-bottom: 0.4rem solid #398506;
+}
+
+.menu img {
+  width: 20%;
+  height: 20%;
+  padding: 0.5rem;
+}
+
+#opcionesMenu {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#opcionesMenu li {
+  list-style: none;
+  padding: 1rem;
+}
+
+#opcionesMenu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: 0.3rem solid #398506;
+  padding: 0.2rem;
+}
+
+#opcionesMenu li a:hover {
+  background-color: #3c7417;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #213f0d;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem;
+}
+
+.footer .footer__logo {
+  width: 16%;
+  height: 16%;
+}
+
+.footer .footer__info {
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.footer .footer__info a {
+  color: white;
+}
+
+.footer .footer__redes .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 99%;
+  list-style: none;
+  height: 100%;
+}
+
+.footer .footer__redes .redes li {
+  text-align: center;
+}
+
+.footer .footer__redes .redes li a {
+  color: white;
+}
+
+.footer .footer__redes .redes li i {
+  font-size: 200%;
+  color: white;
+  padding: 0.5rem;
+}
+
+.redes li:hover {
+  background-color: rgba(123, 209, 66, 0.336);
+  border-radius: 10rem;
+}
+
+.primer_seccion img {
+  height: 35rem;
+  margin: 1rem;
+}
+
+.secciones {
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 0.5rem;
+      grid-template-areas: "variedad variedad noticias" "podio podio dato";
+}
+
+.secciones .secciones__uno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: variedad;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.secciones .secciones__uno .articulo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 5rem 8rem auto;
+      grid-template-rows: 5rem 8rem auto;
+  gap: 0.5rem;
+      grid-template-areas: "titulo detalle" "foto detalle" "foto lista";
+}
+
+.secciones .secciones__uno .articulo .articulo__titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: titulo;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2.8rem;
+}
+
+.secciones .secciones__uno .articulo .articulo__variedad {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: foto;
+  width: 20rem;
+  height: 25rem;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.secciones .secciones__uno .articulo .articulo__variedad:hover {
+  width: 25rem;
+  height: 30rem;
+}
+
+.secciones .secciones__uno .articulo .articulo__detalle {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: detalle;
+  color: #121d0f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+  padding: 1rem;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.secciones .secciones__uno .articulo .articulo__lista {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: lista;
+  padding: 1rem;
+}
+
+.secciones .secciones__uno .articulo .articulo__lista h2 {
+  font-size: 1.8rem;
+  color: #5c855c;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+}
+
+.secciones .secciones__uno .articulo .articulo__lista ul li {
+  list-style: none;
+  text-align: center;
+  color: #5c855c;
+  font-weight: bold;
+}
+
+.secciones .secciones__dos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: podio;
+  width: 100%;
+  height: 100%;
+  border: 0.3rem solid #5c855c;
+  padding: 1rem;
+}
+
+.secciones .secciones__dos h2 {
+  text-align: center;
+  font-family: "Rampart One", cursive;
+  font-size: 2.8rem;
+  color: #5c855c;
+  padding: 1rem;
+}
+
+.secciones .secciones__dos .podios div:hover {
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.secciones .secciones__dos .podios img {
+  padding: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.secciones .secciones__dos .podios div {
+  width: 15rem;
+  background-color: rgba(20, 121, 20, 0.055);
+  border-radius: 150px;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.secciones .secciones__dos .podios a {
+  background-color: #5c855c;
+  padding: 1rem;
+  font-family: "Rampart One", cursive;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.secciones .secciones__tres {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: noticias;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  border: 0.15rem solid #5c855c;
+}
+
+.secciones .secciones__tres h2 {
+  text-align: center;
+  color: #5c855c;
+  font-size: 3.8rem;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.secciones .secciones__tres .noticiero button {
+  background-color: rgba(133, 175, 16, 0.562) !important;
+  font-size: 2rem;
+  font-family: "Play", sans-serif;
+  color: white;
+}
+
+.secciones .secciones__cuatro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: dato;
+  padding: 1rem;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.secciones .secciones__cuatro h5 {
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.manual {
+  width: 100%;
+  height: 100%;
+  border: 0.3rem solid #5c855c;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10rem 10rem 1fr;
+      grid-template-columns: 10rem 10rem 1fr;
+  -ms-grid-rows: auto 6rem;
+      grid-template-rows: auto 6rem;
+  gap: 0.8rem;
+      grid-template-areas: "libro libro opciones" "libro libro opciones";
+}
+
+.manual .manual__libro {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: libro;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.manual .manual__libro img {
+  padding: 1rem;
+  width: 80%;
+  height: 70%;
+}
+
+.manual .manual__opciones {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: opciones;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.manual .manual__opciones .listaGuias {
+  width: 100%;
+  background-color: rgba(20, 121, 20, 0.055);
+  padding: 3rem;
+}
+
+.manual .manual__opciones .listaGuias li a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: darkolivegreen;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.listaGuias li a:hover {
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+p {
+  padding: 1rem;
+}
+
+#espacioCultivo {
+  background-color: rgba(133, 175, 16, 0.562);
+  font-size: 2rem;
+}
+
+#indoor {
+  font-size: 2rem;
+}
+
+#exterior {
+  background-color: rgba(133, 175, 16, 0.562);
+  font-size: 2rem;
+}
+
+#plagas {
+  font-size: 2rem;
+}
+
+#tips {
+  background-color: rgba(133, 175, 16, 0.562);
+  font-size: 2rem;
+}
+
+@media (max-width: 360px) {
+  .manual {
+    border: solid blue;
+    width: 100%;
+    height: 100%;
+    border: 0.3rem solid #5c855c;
+    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    gap: 0.8rem;
+        grid-template-areas: "libro" "opciones";
+  }
+  .manual .manual__opciones .listaGuias li a {
+    font-size: 2rem;
+  }
+}
+
+.primerseccion {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0.8rem;
+      grid-template-areas: "cbd noticias recetas";
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.primerseccion img {
+  width: 100%;
+  height: 80%;
+  padding: 1rem;
+  border-radius: 15%;
+}
+
+.primerseccion p {
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  color: #5c855c;
+}
+
+.primerseccion .primerseccion__cbd {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cbd;
+  border: 0.3rem solid #5c855c;
+  border-radius: 10%;
+  background-color: #ddffdd;
+}
+
+.primerseccion .primerseccion__noticias {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: noticias;
+  border: 0.3rem solid #5c855c;
+  border-radius: 10%;
+  background-color: #ddffdd;
+}
+
+.primerseccion .primerseccion__recetas {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: recetas;
+  border: 0.3rem solid #5c855c;
+  border-radius: 10%;
+  background-color: #ddffdd;
+}
+
+.segundaseccion {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 0.3rem solid #5c855c;
+}
+
+.segundaseccion .segundaseccion__articulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: italic;
+}
+
+.segundaseccion .segundaseccion__articulo img {
+  width: 100%;
+  height: 100%;
+}
+
+.segundaseccion .segundaseccion__documental {
+  background-color: rgba(123, 209, 66, 0.336);
+  text-align: center;
+}
+
+.segundaseccion .segundaseccion__documental h2 {
+  text-decoration: underline;
+  font-family: "Shadows Into Light", cursive;
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.imagenesRecetas {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20rem auto auto 20rem;
+      grid-template-columns: 20rem auto auto 20rem;
+  -ms-grid-rows: 15rem auto 15rem;
+      grid-template-rows: 15rem auto 15rem;
+  gap: 1.8rem;
+      grid-template-areas: "aceite crema  crema infusiones" "aceite formas formas infusiones" "aceite comida comida infusiones";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.imagenesRecetas .aceiteMed {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: aceite;
+  width: 100%;
+  height: 100%;
+}
+
+.imagenesRecetas .cremaMed {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: crema;
+  width: 100%;
+  height: 100%;
+}
+
+.imagenesRecetas .formas {
+  font-size: 3rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: formas;
+  text-align: center;
+  font-style: italic;
+  color: #5c855c;
+  font-family: "Rampart One", cursive;
+}
+
+.imagenesRecetas .infusionesMed {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: infusiones;
+  width: 100%;
+  height: 100%;
+}
+
+.imagenesRecetas .comidaMed {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: comida;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .primerseccion {
+    border: solid red;
+  }
+  .primerseccion img {
+    width: 100%;
+    height: 60%;
+    padding: 0.5rem;
+  }
+  .primerseccion p {
+    font-size: 1.6rem;
+  }
+  .segundaseccion {
+    border: solid blue;
+  }
+  .segundaseccion h1 {
+    font-size: 2.3rem;
+  }
+  .segundaseccion .segundaseccion__articulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-style: italic;
+  }
+  .segundaseccion .segundaseccion__articulo img {
+    width: 80%;
+    height: 80%;
+  }
+  .segundaseccion__documental iframe {
+    width: 40rem;
+    height: 30rem;
+  }
+  .imagenesRecetas {
+    border: solid red;
+    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 12rem auto 12rem;
+        grid-template-columns: 12rem auto 12rem;
+    -ms-grid-rows: 10rem auto 10rem;
+        grid-template-rows: 10rem auto 10rem;
+    gap: 1rem;
+        grid-template-areas: "aceite crema infusiones" "aceite formas infusiones" "aceite comida infusiones";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(123, 209, 66, 0.336);
+  }
+  .imagenesRecetas .aceiteMed {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: aceite;
+    width: 100%;
+    height: 80%;
+  }
+  .imagenesRecetas .cremaMed {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: crema;
+    width: 100%;
+    height: 100%;
+  }
+  .imagenesRecetas .formas {
+    font-size: 2rem;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: formas;
+  }
+  .imagenesRecetas .infusionesMed {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+    grid-area: infusiones;
+    width: 100%;
+    height: 80%;
+  }
+  .imagenesRecetas .comidaMed {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: comida;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .primerseccion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .segundaseccion .segundaseccion__articulo p {
+    font-size: 1rem;
+  }
+  .segundaseccion .segundaseccion__documental h2 {
+    font-size: 2.5rem;
+  }
+  .segundaseccion .segundaseccion__documental iframe {
+    width: 18rem;
+    height: 15rem;
+  }
+  .imagenesRecetas {
+    border: solid red;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.tienda {
+  width: 100%;
+  height: 100%;
+  padding: 7rem;
+  background-color: #c9e7dd;
+  font-size: 1.5rem;
+  font-family: "Rampart One", cursive;
+  color: #5c855c;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: auto auto;
+  gap: 0.8rem;
+      grid-template-areas: "carpa luz sustratos" "fertilizantes accesorios cosecha";
+}
+
+.tienda article {
+  padding: 1.5rem;
+  background-color: rgba(20, 121, 20, 0.055);
+  border-radius: 20%;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tienda article:hover {
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.tienda img {
+  border-radius: 20%;
+  width: 18rem;
+  height: 20rem;
+}
+
+.tienda button {
+  background-color: #5c855c;
+  padding: 1rem;
+  margin: 2rem;
+  font-family: "Rampart One", cursive;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+}
+
+.tienda h2 {
+  font-weight: bold;
+}
+
+.tienda .tienda__carpas {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: carpa;
+}
+
+.tienda .tienda__luminaria {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: luz;
+}
+
+.tienda .tienda__sustratos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sustratos;
+}
+
+.tienda .tienda__fertilizantes {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: fertilizantes;
+}
+
+.tienda .tienda__accesorios {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: accesorios;
+}
+
+.tienda .tienda__cosecha {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: cosecha;
+}
+
+@media (max-width: 768px) {
+  .tienda {
+    padding: 3rem;
+    border: solid red;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20rem 20rem;
+        grid-template-columns: 20rem 20rem;
+        grid-template-areas: auto auto auto;
+    gap: 0.8rem;
+        grid-template-areas: "carpa luz" "sustratos fertilizantes" "accesorios cosecha";
+  }
+}
+
+@media (max-width: 360px) {
+  .tienda {
+    padding: 0.5rem;
+    border: solid blue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contacto {
+  height: 100%;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0.8rem;
+      grid-template-areas: "imagen imagen formulario" "imagen imagen formulario";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #348f50;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#56b4d3), to(#348f50));
+  background: linear-gradient(to right, #56b4d3, #348f50);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contacto .contacto__imagen {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: imagen;
+}
+
+.contacto .contacto__imagen h1 {
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.contacto .contacto__imagen img {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.contacto .contacto__formulario {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: formulario;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 0.4rem solid #398506;
+}
+
+.contacto .contacto__formulario input:focus {
+  width: 25rem;
+  height: 2.5rem;
+  font-size: 2rem;
+}
+
+.contacto .contacto__formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.8rem;
+}
+
+.contacto .contacto__formulario form input {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  width: 20rem;
+  height: 2rem;
+}
+
+.contacto .contacto__formulario .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.contacto .contacto__formulario .check input {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contacto {
+    border: red solid;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 22rem 22rem;
+        grid-template-columns: 22rem 22rem;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 0.8rem;
+        grid-template-areas: "imagen formulario" "imagen formulario";
+  }
+  .contacto .contacto__imagen img {
+    height: 25rem;
+  }
+  .contacto .contacto__formulario .check {
+    padding: 0.3rem;
+  }
+  .contacto .contacto__formulario .check input {
+    width: 7.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .contacto {
+    padding: 0.5rem;
+    border: solid blue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacto .contacto__formulario form input {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    width: 100%;
+    height: 1.5rem;
+  }
+  .contacto .contacto__formulario form input:focus {
+    width: 100%;
+    height: 1.8rem;
+    font-size: 2rem;
+  }
+  .contacto .contacto__formulario .check {
+    padding: 0.3rem;
+  }
+  .contacto .contacto__formulario .check input {
+    width: 6.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .secciones {
+    border: solid red;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20rem 25rem;
+        grid-template-columns: 20rem 25rem;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "variedad variedad" "dato noticias" "podio podio";
+  }
+  .secciones .secciones__uno .articulo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20rem 23rem;
+        grid-template-columns: 20rem 23rem;
+    -ms-grid-rows: 7rem 8rem auto;
+        grid-template-rows: 7rem 8rem auto;
+    gap: 0.3rem;
+        grid-template-areas: "titulo detalle" "foto detalle" "foto lista";
+  }
+  .secciones .secciones__dos .podios div {
+    width: 13rem;
+  }
+  .secciones .secciones__tres {
+    padding: 0;
+  }
+  .footer__logo {
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .secciones {
+    border: solid blue;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20rem;
+        grid-template-columns: 20rem;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "variedad" "dato" "noticias" "podio";
+  }
+  .secciones .secciones__uno .articulo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 18rem;
+        grid-template-columns: 18rem;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    gap: 0.3rem;
+        grid-template-areas: "titulo" "foto" "detalle" "lista";
+  }
+  .secciones .secciones__uno .articulo .articulo__variedad {
+    width: 18rem;
+    height: 22rem;
+  }
+  .secciones .secciones__uno .articulo .articulo__lista ul li {
+    text-align: inherit;
+  }
+  .secciones .secciones__dos .podios div {
+    width: 15rem;
+  }
+  .secciones .secciones__tres {
+    padding: 0;
+  }
+  .secciones .secciones__tres .noticiero button {
+    background-color: rgba(133, 175, 16, 0.562) !important;
+    font-size: 1.5rem;
+    font-family: "Play", sans-serif;
+    color: white;
+  }
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5rem 5rem 10rem;
+        grid-template-columns: 5rem 5rem 10rem;
+    -ms-grid-rows: 12rem;
+        grid-template-rows: 12rem;
+        grid-template-areas: "logo info redes";
+  }
+  .footer .footer__logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    width: 110%;
+    height: 70%;
+    padding: 0.8rem;
+  }
+  .footer .footer__info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: info;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .footer .footer__info a {
+    color: white;
+  }
+  .footer .footer__redes {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: redes;
+  }
+  .footer .footer__redes .redes {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer .footer__redes .redes h3 {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,100 @@
+.manual {
+  width: 100%;
+  height: 100%;
+  border: 0.3rem solid rgb(92, 133, 92);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 10rem 10rem 1fr;
+  grid-template-rows: auto 6rem;
+  gap: 0.8rem;
+  grid-template-areas:
+    "libro libro opciones"
+    "libro libro opciones";
+  .manual__libro {
+    grid-area: libro;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    img {
+      padding: 1rem;
+      width: 80%;
+      height: 70%;
+    }
+  }
+  .manual__opciones {
+    grid-area: opciones;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .listaGuias {
+      width: 100%;
+      background-color: rgba(20, 121, 20, 0.055);
+      padding: 3rem;
+      li a {
+        font-size: 3rem;
+        text-decoration: none;
+        color: darkolivegreen;
+        font-style: italic;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.listaGuias li a:hover {
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+p{
+  padding: 1rem;
+}
+
+#espacioCultivo {
+  background-color: rgba(133, 175, 16, 0.562);
+  font-size: 2rem;
+}
+
+#indoor {
+  font-size: 2rem;
+}
+
+#exterior {
+  background-color: rgba(133, 175, 16, 0.562);
+  font-size: 2rem;
+}
+
+#plagas {
+  font-size: 2rem;
+}
+
+#tips {
+  background-color: rgba(133, 175, 16, 0.562);
+  font-size: 2rem;
+}
+
+@media (max-width: 360px) {
+  .manual {
+    border: solid blue;
+    width: 100%;
+    height: 100%;
+    border: 0.3rem solid rgb(92, 133, 92);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.8rem;
+    grid-template-areas:
+      "libro"
+      "opciones";
+    .manual__opciones {
+      .listaGuias {
+        li a {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

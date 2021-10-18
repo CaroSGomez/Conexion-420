@@ -1,0 +1,130 @@
+@import "fuentes";
+@import "variables";
+@import "general";
+@import "index";
+@import "guias";
+@import "medicinal";
+@import "tienda";
+@import "contacto";
+
+@media (max-width: 768px) {
+    .secciones {
+      border: solid red;
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: 20rem 25rem;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "variedad variedad"
+        "dato noticias"
+        "podio podio";
+      .secciones__uno {
+        .articulo {
+          display: grid;
+          grid-template-columns: 20rem 23rem;
+          grid-template-rows: 7rem 8rem auto;
+          gap: 0.3rem;
+          grid-template-areas:
+            "titulo detalle"
+            "foto detalle"
+            "foto lista";
+        }
+      }
+      .secciones__dos {
+        .podios div {
+          width: 13rem;
+        }
+      }
+  
+      .secciones__tres {
+        padding: 0;
+      }
+    }
+    .footer__logo {
+         padding: 0.7rem;
+      }
+  }
+  
+  @media (max-width: 360px) {
+    .secciones {
+      border: solid blue;
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: 20rem;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "variedad"
+        "dato"
+        "noticias"
+        "podio";
+      .secciones__uno {
+        .articulo {
+          display: grid;
+          grid-template-columns: 18rem;
+          grid-template-rows: auto auto auto auto;
+          gap: 0.3rem;
+          grid-template-areas:
+            "titulo"
+            "foto"
+            "detalle"
+            "lista";
+          .articulo__variedad {
+            width: 18rem;
+            height: 22rem;
+          }
+          .articulo__lista ul li {
+            text-align: inherit;
+          }
+        }
+      }
+      .secciones__dos {
+        .podios div {
+          width: 15rem;
+        }
+      }
+      .secciones__tres {
+        padding: 0;
+        .noticiero button {
+          background-color: rgba(133, 175, 16, 0.562) !important;
+          font-size: 1.5rem;
+          font-family: "Play", sans-serif;
+          color: white;
+        }
+      }
+    }
+  
+    .footer {
+      display: grid;
+      grid-template-columns: 5rem 5rem 10rem;
+      grid-template-rows: 12rem;
+      grid-template-areas: "logo info redes";
+      .footer__logo {
+        grid-area: logo;
+        width: 110%;
+        height: 70%;
+        padding: 0.8rem;
+      }
+      .footer__info {
+        grid-area: info;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        a {
+          color: white;
+        }
+      }
+      .footer__redes {
+        grid-area: redes;
+        .redes {
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          h3 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  

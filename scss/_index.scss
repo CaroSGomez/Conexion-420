@@ -1,0 +1,155 @@
+.primer_seccion img {
+  height: 35rem;
+  margin: 1rem;
+}
+
+.secciones {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+  grid-template-areas:
+    "variedad variedad noticias"
+    "podio podio dato";
+
+  .secciones__uno {
+    grid-area: variedad;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: $color1;
+    .articulo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 5rem 8rem auto;
+      gap: 0.5rem;
+      grid-template-areas:
+        "titulo detalle"
+        "foto detalle"
+        "foto lista";
+
+      .articulo__titulo {
+        grid-area: titulo;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 2.8rem;
+      }
+      .articulo__variedad {
+        grid-area: foto;
+        width: 20rem;
+        height: 25rem;
+        transition: all 2s;
+      }
+      .articulo__variedad:hover {
+        width: 25rem;
+        height: 30rem;
+      }
+      
+      .articulo__detalle {
+        grid-area: detalle;
+        color: rgb(18, 29, 15);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: right;
+        padding: 1rem;
+        font-style: italic;
+        font-size: 1rem;
+      }
+      .articulo__lista {
+        grid-area: lista;
+        padding: 1rem;
+        h2 {
+          font-size: 1.8rem;
+          color: rgb(92, 133, 92);
+          text-decoration: underline;
+          text-align: center;
+          font-weight: bold;
+        }
+        ul li {
+          list-style: none;
+          text-align: center;
+          color: rgb(92, 133, 92);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .secciones__dos {
+    grid-area: podio;
+    width: 100%;
+    height: 100%;
+    border: 0.3rem solid rgb(92, 133, 92);
+    padding: 1rem;
+    h2 {
+      text-align: center;
+      font-family: "Rampart One", cursive;
+      font-size: 2.8rem;
+      color: rgb(92, 133, 92);
+      padding: 1rem;
+    }
+    .podios div:hover {
+      background-color: rgba(123, 209, 66, 0.336);
+    }
+    .podios {
+      img {
+        padding: 1.5rem;
+        width: 100%;
+        height: 100%;
+      }
+      div {
+        width: 15rem;
+        background-color: rgba(20, 121, 20, 0.055);
+        border-radius: 150px;
+        text-align: center;
+        padding: 1rem;
+        margin: 0.5rem;
+      }
+      a {
+        background-color: rgb(92, 133, 92);
+        padding: 1rem;
+        font-family: "Rampart One", cursive;
+        color: white;
+        font-size: 1.3rem;
+        border-radius: 2rem;
+        margin: 1rem;
+      }
+    }
+  }
+  .secciones__tres {
+    grid-area: noticias;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    border: 0.15rem solid rgb(92, 133, 92);
+    h2 {
+      text-align: center;
+      color: rgb(92, 133, 92);
+      font-size: 3.8rem;
+      text-decoration: underline;
+      font-style: normal;
+      font-weight: bold;
+    }
+    .noticiero button {
+      background-color: rgba(133, 175, 16, 0.562) !important;
+      font-size: 2rem;
+      font-family: "Play", sans-serif;
+      color: white;
+    }
+  }
+  .secciones__cuatro {
+    grid-area: dato;
+    padding: 1rem;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 2rem;
+    text-align: center;
+    background-color: $color1;
+    h5 {
+      font-weight: bold;
+      font-size: 3rem;
+      background-color: $color1;
+    }
+  }
+}
+
+
+
